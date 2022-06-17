@@ -40,7 +40,6 @@ struct TweetRowView: View {
                     }
                     
                 }
-    //            .padding()
                 
                 // Action Buttons
                 HStack {
@@ -73,6 +72,7 @@ struct TweetRowView: View {
                     }
                 }
                 .padding()
+                .foregroundColor(.gray)
             }
             .padding()
             Divider()
