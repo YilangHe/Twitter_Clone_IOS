@@ -14,11 +14,11 @@ struct ProfileView: View {
             
             actionButtons
             
-            VStack(alignment: .leading, spacing: 4) {
-                HStack {
-                    Text("Luis Hamilton")
-                        .font(.title)
-                        .bold()
+            userInfoDetail
+            
+            HStack {
+                ForEach(TweetFilterViewModel.allCases, id: \.rawValue) { option in
+                    
                 }
             }
             
@@ -75,6 +75,60 @@ struct ProfileView: View {
         }
     }
     .padding(.trailing)
+}
+
+@ViewBuilder private var userInfoDetail: some View {
+    VStack(alignment: .leading, spacing: 4) {
+        HStack {
+            Text("Luis Hamilton")
+                .font(.title)
+                .bold()
+            Image(systemName: "checkmark.seal.fill")
+                .foregroundColor(Color(.systemBlue))
+        }
+        
+        Text("@World Chamption")
+            .font(.subheadline)
+            .foregroundColor(.gray)
+        
+        Text("Mercedes sucks")
+            .font(.subheadline)
+            .padding(.vertical)
+        
+        HStack(spacing: 24) {
+            HStack {
+                Image(systemName: "mappin.and.ellipse")
+                Text("London, UK")
+            }
+            
+            HStack {
+                Image(systemName: "link")
+                Text("www.mercedes.com")
+            }
+        }
+        .font(.caption)
+        .foregroundColor(.gray)
+        
+        HStack(spacing: 24) {
+            HStack(spacing:4){
+                Text("120")
+                    .bold()
+                    .font(.subheadline)
+                Text("Following")
+                    .font(.caption)
+            }
+            
+            HStack {
+                Text("6.9M")
+                    .bold()
+                    .font(.subheadline)
+                Text("Followers")
+                    .font(.caption)
+            }
+        }
+        .padding(.vertical)
+    }
+    .padding(.horizontal)
 }
 
 struct ProfileView_Previews: PreviewProvider {
