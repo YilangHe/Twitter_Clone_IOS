@@ -8,5 +8,9 @@ Tutorial link: https://www.youtube.com/watch?v=3pIXMwvJLZs&list=WL&index=2&t=285
 
 
 ## Implementation Journal
+
 #### 6.16
 Finished set up the tab view
+
+#### 6.20
+Finished profile view UI
