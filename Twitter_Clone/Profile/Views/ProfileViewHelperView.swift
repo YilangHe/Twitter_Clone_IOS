@@ -56,7 +56,7 @@ extension ProfileView {
                 .ignoresSafeArea()
             VStack {
                 Button {
-                    
+                    mode.wrappedValue.dismiss()
                 } label: {
                     Image(systemName: "arrow.left")
                         .resizable()

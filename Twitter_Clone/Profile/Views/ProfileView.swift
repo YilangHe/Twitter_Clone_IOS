@@ -9,6 +9,7 @@ import SwiftUI
 
 struct ProfileView: View {
     @State var selectedFilter: TweetFilterViewModel = .tweets
+    @Environment(\.presentationMode) var mode
     @Namespace var animation
     
     var body: some View {
