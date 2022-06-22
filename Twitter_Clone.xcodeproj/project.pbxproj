@@ -21,6 +21,9 @@
 		203E069B28618A2500FCCAFB /* ProfileViewHelperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E069A28618A2500FCCAFB /* ProfileViewHelperView.swift */; };
 		203E06A02861937F00FCCAFB /* UserRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 203E069F2861937F00FCCAFB /* UserRowView.swift */; };
 		207713EE283E0A7900AA1AD5 /* TweetRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207713ED283E0A7900AA1AD5 /* TweetRowView.swift */; };
+		2090B2942862B83900C8E728 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B2932862B83900C8E728 /* SideMenuView.swift */; };
+		2090B2962862B84C00C8E728 /* SideMenuRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B2952862B84C00C8E728 /* SideMenuRowView.swift */; };
+		2090B2982862B87700C8E728 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2090B2972862B87700C8E728 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +42,9 @@
 		203E069A28618A2500FCCAFB /* ProfileViewHelperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewHelperView.swift; sourceTree = "<group>"; };
 		203E069F2861937F00FCCAFB /* UserRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRowView.swift; sourceTree = "<group>"; };
 		207713ED283E0A7900AA1AD5 /* TweetRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetRowView.swift; sourceTree = "<group>"; };
+		2090B2932862B83900C8E728 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		2090B2952862B84C00C8E728 /* SideMenuRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuRowView.swift; sourceTree = "<group>"; };
+		2090B2972862B87700C8E728 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +101,7 @@
 		20057EB4281FBD7900CB0112 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				2090B2902862B7F400C8E728 /* Side Menu */,
 				20057EBA281FBDBC00CB0112 /* Components */,
 				203E068C285C495800FCCAFB /* Explore */,
 				203E068B285C495200FCCAFB /* Notifications */,
@@ -249,6 +256,32 @@
 			path = Tweets;
 			sourceTree = "<group>";
 		};
+		2090B2902862B7F400C8E728 /* Side Menu */ = {
+			isa = PBXGroup;
+			children = (
+				2090B2922862B82300C8E728 /* Views */,
+				2090B2912862B81800C8E728 /* ViewModel */,
+			);
+			path = "Side Menu";
+			sourceTree = "<group>";
+		};
+		2090B2912862B81800C8E728 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2090B2972862B87700C8E728 /* SideMenuViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2090B2922862B82300C8E728 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2090B2932862B83900C8E728 /* SideMenuView.swift */,
+				2090B2952862B84C00C8E728 /* SideMenuRowView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -322,6 +355,8 @@
 				203E0693285C4A3F00FCCAFB /* MessagesView.swift in Sources */,
 				203E069B28618A2500FCCAFB /* ProfileViewHelperView.swift in Sources */,
 				203E0697285C4D9600FCCAFB /* ProfileView.swift in Sources */,
+				2090B2962862B84C00C8E728 /* SideMenuRowView.swift in Sources */,
+				2090B2942862B83900C8E728 /* SideMenuView.swift in Sources */,
 				20057EA9281FBD3B00CB0112 /* ContentView.swift in Sources */,
 				207713EE283E0A7900AA1AD5 /* TweetRowView.swift in Sources */,
 				203E0699285D88B900FCCAFB /* TweetFilterViewModel.swift in Sources */,
@@ -330,6 +365,7 @@
 				20057EA7281FBD3B00CB0112 /* Twitter_CloneApp.swift in Sources */,
 				203E068F285C49ED00FCCAFB /* ExploreView.swift in Sources */,
 				203E06A02861937F00FCCAFB /* UserRowView.swift in Sources */,
+				2090B2982862B87700C8E728 /* SideMenuViewModel.swift in Sources */,
 				203E0689285C46BD00FCCAFB /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
